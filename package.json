@@ -1,0 +1,63 @@
+{
+  "name": "dsh-window-memory",
+  "version": "1.1.0",
+  "description": "记住 DSH 桌面版主窗口的尺寸、位置与最大化状态，下次启动毫秒级还原；带可视化设置页。Remembers the DeepSeek Harness desktop window's size, position and maximized state and restores it almost instantly on the next launch, with a settings page.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "desktop",
+    "window",
+    "window-state",
+    "window-size",
+    "maximized",
+    "win32"
+  ],
+  "license": "MIT",
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiaxusummer/dsh-window-memory.git"
+  },
+  "homepage": "https://github.com/jiaxusummer/dsh-window-memory#readme",
+  "bugs": {
+    "url": "https://github.com/jiaxusummer/dsh-window-memory/issues"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "displayName": "窗口记忆",
+    "description": "记住 DSH 桌面版主窗口的尺寸、位置与最大化状态，下次启动毫秒级还原。设置 → 窗口记忆。",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
