@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Window memory",
+    "description": "Restores the DSH desktop main window to how you left it — size, position and maximized state — within about 0.15 s of the window appearing, so it no longer snaps from the default size. Settings → Window memory holds three checkboxes (enabled / remember maximized / remember size & position) plus Remember this window, Restore now and Clear record. The state lives in $DSH_HOME/window-state.json; the installation directory is never touched."
+  }
+}
