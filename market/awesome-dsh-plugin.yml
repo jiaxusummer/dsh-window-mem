@@ -1,0 +1,7 @@
+url: https://github.com/jiaxusummer/dsh-window-memory
+name: jiaxusummer/dsh-window-memory
+category: ui
+description:
+  en: 'Remember the DeepSeek Harness desktop window’s size, position and maximized state, and restore it on the next launch in about 0.15 s; a settings page with card-style controls.'
+  zh: '记住 DeepSeek Harness 桌面版主窗口的尺寸、位置与最大化状态，下次启动约 0.15 秒内还原；设置页带卡片式开关。'
+icon: https://raw.githubusercontent.com/jiaxusummer/dsh-window-memory/main/icon.svg
