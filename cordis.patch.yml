@@ -1,0 +1,14 @@
+# dsh-window-memory bundle patch —— 插入一行宿主插件。
+# 行名必须等于包名：loader 用它 resolve 到本包，也是浏览器半侧的模块 id。
+# 下面的 config 只是初始默认值；设置 → 窗口记忆 里改的勾选会覆盖它
+# （存在 $DSH_HOME/window-memory.json）。
+- insert:
+    - id: dsh-window-memory
+      name: 'dsh-window-memory'
+      config:
+        # 总开关：关掉后既不还原也不记录。
+        enabled: true
+        # 记住并还原最大化状态。
+        restoreMaximized: true
+        # 记住并还原窗口尺寸与位置。
+        restoreSizePosition: true
