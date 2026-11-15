@@ -1,5 +1,5 @@
 {
-  "name": "dsh-window-memory",
+  "name": "dsh-window-mem",
   "version": "1.1.0",
   "description": "记住 DSH 桌面版主窗口的尺寸、位置与最大化状态，下次启动毫秒级还原；带可视化设置页。Remembers the DeepSeek Harness desktop window's size, position and maximized state and restores it almost instantly on the next launch, with a settings page.",
   "type": "module",
@@ -39,11 +39,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jiaxusummer/dsh-window-memory.git"
+    "url": "git+https://github.com/jiaxusummer/dsh-window-mem.git"
   },
-  "homepage": "https://github.com/jiaxusummer/dsh-window-memory#readme",
+  "homepage": "https://github.com/jiaxusummer/dsh-window-mem#readme",
   "bugs": {
-    "url": "https://github.com/jiaxusummer/dsh-window-memory/issues"
+    "url": "https://github.com/jiaxusummer/dsh-window-mem/issues"
   },
   "dsh": {
     "manifestVersion": 1,
