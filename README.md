@@ -1,4 +1,4 @@
-# 窗口记忆 · dsh-window-memory
+# 窗口记忆 · dsh-window-mem
 
 让 **DeepSeek Harness 桌面版**记住主窗口的尺寸、位置与最大化状态：你怎么关，
 下次启动就是什么样。窗口一出现就套用（实测约 0.17 秒），所以不会先弹出一个
@@ -13,14 +13,14 @@
 从 GitHub 安装：
 
 ```sh
-dsh plugin --profile desktop add https://github.com/jiaxusummer/dsh-window-memory
+dsh plugin --profile desktop add https://github.com/jiaxusummer/dsh-window-mem
 ```
 
 桌面版默认没有 `dsh` 命令，这时用插件页的「添加插件」：选本仓库目录，或从插件市场
 （条目见 `market/awesome-dsh-plugin.yml`）安装。本地开发也可以直接当 bundle 装：
 
 ```sh
-dsh plugin --profile desktop add link:C:\path\to\dsh-window-memory
+dsh plugin --profile desktop add link:C:\path\to\dsh-window-mem
 ```
 
 装完重启 DSH，在 **设置 → 窗口记忆** 里用。
@@ -55,7 +55,7 @@ dsh plugin --profile desktop add link:C:\path\to\dsh-window-memory
 `cordis.patch.yml` 末尾加一条同 id 的覆盖（loader 会用这条替换整行 `config`）：
 
 ```yaml
-- id: dsh-window-memory
+- id: dsh-window-mem
   config:
     enabled: true
     restoreMaximized: true
@@ -114,7 +114,7 @@ DSH 主进程自己创建窗口、自己 `show()`，窗口尺寸 1280×820 硬�
 
 ## 文件
 
-- `index.js` 宿主半边：轮询、还原、录制，以及设置页的 HTTP 接口（`/dsh-window-memory`）。
+- `index.js` 宿主半边：轮询、还原、录制，以及设置页的 HTTP 接口（`/dsh-window-mem`）。
 - `client.js` 浏览器半边：设置里的「窗口记忆」页（`settings.section` 槽位）。
 - `lib/win32.js` user32 封装；`lib/state.js` 状态文件读写；`lib/geometry.js` 纯几何计算。
 - `market/awesome-dsh-plugin.yml` DSH 插件市场的收录条目。
